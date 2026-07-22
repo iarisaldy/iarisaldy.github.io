@@ -54,6 +54,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   font-size: 16px;
 }
 
@@ -492,6 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Sections Padding */
 .section {
   padding: 6rem 0;
+  scroll-margin-top: 90px;
 }
 
 .bg-surface {
