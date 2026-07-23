@@ -47,6 +47,13 @@ function setLanguage(lang) {
     }
   });
 
+  // Update CV download links according to selected language
+  const targetPdf = lang === 'en' ? 'CV_M_Irfan_Arisaldy_EN.pdf' : 'CV_M_Irfan_Arisaldy.pdf';
+  const cvLinks = document.querySelectorAll('a[href*="CV_M_Irfan_Arisaldy"]');
+  cvLinks.forEach(link => {
+    link.setAttribute('href', targetPdf);
+  });
+
   // Update active state on language buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     if (btn.getAttribute('data-lang') === lang) {
