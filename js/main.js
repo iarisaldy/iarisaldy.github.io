@@ -1,27 +1,86 @@
 /**
- * M IRFAN ARISALDY - PORTFOLIO INTERACTIVITY
+ * M IRFAN ARISALDY - PORTFOLIO INTERACTIVITY & i18N
  */
 
+let currentLang = localStorage.getItem('portfolio_lang') || 'id';
+let typingTimeout = null;
+
 document.addEventListener('DOMContentLoaded', () => {
-  initTypingEffect();
+  initLanguageSwitcher();
   initNavbarScroll();
   initMobileNav();
   initProjectFilters();
   initActiveNavLink();
+  
+  // Apply initial language & typing effect
+  setLanguage(currentLang);
 });
 
+/* Language Switcher & i18n Engine */
+function initLanguageSwitcher() {
+  const langBtns = document.querySelectorAll('.lang-btn');
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      if (lang && lang !== currentLang) {
+        setLanguage(lang);
+      }
+    });
+  });
+}
+
+function setLanguage(lang) {
+  if (!typeof translations !== 'undefined' && !translations[lang]) return;
+  
+  currentLang = lang;
+  localStorage.setItem('portfolio_lang', lang);
+  document.documentElement.lang = lang;
+
+  const langData = translations[lang];
+
+  // Update all data-i18n elements
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (langData && langData[key]) {
+      el.innerHTML = langData[key];
+    }
+  });
+
+  // Update active state on language buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Restart typing effect with new language
+  initTypingEffect(lang);
+}
+
 /* Typing Text Effect */
-function initTypingEffect() {
+function initTypingEffect(lang = 'id') {
   const typingElement = document.querySelector('.typing-text');
   if (!typingElement) return;
 
-  const words = [
+  if (typingTimeout) {
+    clearTimeout(typingTimeout);
+  }
+
+  const words = lang === 'en' ? [
+    'Senior SQA Engineer',
+    'Fullstack Developer',
+    'AI-Assisted Testing Lead',
+    'Automation Architect'
+  ] : [
     'Senior SQA Engineer',
     'Fullstack Developer',
     'AI-Assisted Testing Lead',
     'Automation Architect'
   ];
-  
+
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -49,7 +108,7 @@ function initTypingEffect() {
       typeSpeed = 500;
     }
 
-    setTimeout(type, typeSpeed);
+    typingTimeout = setTimeout(type, typeSpeed);
   }
 
   type();

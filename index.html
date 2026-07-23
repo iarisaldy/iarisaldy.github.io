@@ -43,16 +43,20 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">Tentang</a></li>
-          <li><a href="#skills" class="nav-link">Keahlian</a></li>
-          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
-          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyek</a></li>
           <li><a href="yommory/index.html" class="nav-link" style="color: #f59e0b; font-weight: 700;"><i class="fa-solid fa-shop"></i> Yommory</a></li>
-          <li><a href="#education" class="nav-link">Pendidikan</a></li>
-          <li><a href="#contact" class="nav-link">Kontak</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+          <li class="lang-switcher">
+            <button class="lang-btn active" data-lang="id" aria-label="Bahasa Indonesia">🇮🇩 ID</button>
+            <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧 EN</button>
+          </li>
           <li>
-            <a href="CV_M_Irfan_Arisaldy.pdf" target="_blank" class="btn btn-primary btn-sm">
+            <a href="CV_M_Irfan_Arisaldy.pdf" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav.downloadCV">
               <i class="fa-solid fa-download"></i> Unduh CV
             </a>
           </li>
@@ -66,41 +70,41 @@
         <div class="hero-grid">
           <!-- Left Hero Text -->
           <div class="hero-content">
-            <div class="hero-badge">
+            <div class="hero-badge" data-i18n="hero.badge">
               <span class="pulse-dot"></span>
               Terbuka untuk Peluang Senior QA & Fullstack Dev
             </div>
             <h1 class="hero-title">
-              Halo, Saya <br />
-              <span class="gradient-text">M Irfan Arisaldy</span>
+              <span data-i18n="hero.greeting">Halo, Saya</span> <br />
+              <span class="gradient-text" data-i18n="hero.name">M Irfan Arisaldy</span>
             </h1>
             <div class="hero-subtitle">
               <i class="fa-solid fa-code"></i>
               <span class="typing-text">Senior SQA Engineer</span>
             </div>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
               Senior Software Quality Assurance Engineer & Developer dengan pengalaman <strong>4+ tahun</strong>. Memiliki keahlian teknis ganda dalam <strong>AI-Assisted Software Testing & Automation</strong> serta pengembangan web modern menggunakan <strong>Node.js, Next.js, Express, dan REST API</strong>.
             </p>
             <div class="hero-actions">
-              <a href="CV_M_Irfan_Arisaldy.pdf" download class="btn btn-primary">
+              <a href="CV_M_Irfan_Arisaldy.pdf" download class="btn btn-primary" data-i18n="hero.downloadCV">
                 <i class="fa-solid fa-file-arrow-down"></i> Unduh CV (PDF)
               </a>
-              <a href="#contact" class="btn btn-outline">
+              <a href="#contact" class="btn btn-outline" data-i18n="hero.contactBtn">
                 <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
               </a>
             </div>
             <div class="hero-stats">
               <div class="stat-item">
-                <h3>4+</h3>
-                <p>Tahun Pengalaman</p>
+                <h3 data-i18n="hero.stat1.val">4+</h3>
+                <p data-i18n="hero.stat1.lbl">Tahun Pengalaman</p>
               </div>
               <div class="stat-item">
-                <h3>3+</h3>
-                <p>Tahun Testing Automation</p>
+                <h3 data-i18n="hero.stat2.val">3+</h3>
+                <p data-i18n="hero.stat2.lbl">Tahun Testing Automation</p>
               </div>
               <div class="stat-item">
-                <h3>100%</h3>
-                <p>Kualitas & Kode Clean</p>
+                <h3 data-i18n="hero.stat3.val">100%</h3>
+                <p data-i18n="hero.stat3.lbl">Kualitas & Kode Clean</p>
               </div>
             </div>
           </div>
@@ -113,7 +117,7 @@
               </div>
               <div class="avatar-info">
                 <h3>M Irfan Arisaldy, S.Kom.</h3>
-                <p>Senior SQA Engineer & Fullstack Developer</p>
+                <p data-i18n="hero.role">Senior SQA Engineer & Fullstack Developer</p>
               </div>
               <div class="social-links">
                 <a href="https://linkedin.com/in/irfan-arisaldy" target="_blank" class="social-icon" aria-label="LinkedIn">
@@ -139,11 +143,11 @@
     <section id="about" class="section bg-surface">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="about.tag">
             <i class="fa-solid fa-user-astronaut"></i> Ringkasan Profil
           </div>
-          <h2 class="section-title">Keahlian Ganda: QA Automation & Fullstack Dev</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="about.title">Keahlian Ganda: QA Automation & Fullstack Dev</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">
             Kombinasi mendalam antara efisiensi alur kerja pengujian berbasis Generative AI dan pemahaman arsitektur aplikasi modern.
           </p>
         </div>
@@ -153,8 +157,8 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-robot"></i>
             </div>
-            <h3>AI-Assisted Software Testing</h3>
-            <p>
+            <h3 data-i18n="about.card1.title">AI-Assisted Software Testing</h3>
+            <p data-i18n="about.card1.desc">
               Menerapkan Prompt Engineering & Generative AI Scripting (Copilot, ChatGPT, Claude) untuk mempercepat pembuatan Test Scenario, Edge Cases, Test Case otomatis, serta otomatisasi skrip Robot Framework dan validasi API di Postman.
             </p>
           </div>
@@ -163,8 +167,8 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-code-compare"></i>
             </div>
-            <h3>Fullstack & Backend Understanding</h3>
-            <p>
+            <h3 data-i18n="about.card2.title">Fullstack & Backend Understanding</h3>
+            <p data-i18n="about.card2.desc">
               Latar belakang kuat sebagai Fullstack Developer (Node.js, Express, Next.js, React) memberikan kemampuan analisis bug hingga tingkat backend/frontend dan pemahaman arsitektur RESTful API yang mendalam.
             </p>
           </div>
@@ -173,8 +177,8 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-vial-circle-check"></i>
             </div>
-            <h3>End-to-End Quality Assurance</h3>
-            <p>
+            <h3 data-i18n="about.card3.title">End-to-End Quality Assurance</h3>
+            <p data-i18n="about.card3.desc">
               Berpengalaman 3+ tahun dalam pengujian skala besar untuk Web Admin Panel, Mobile Apps, dan REST API menggunakan Robot Framework, Katalon Studio, Selenium, dan Postman dalam ekosistem Agile/Scrum.
             </p>
           </div>
@@ -183,8 +187,8 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-users-gear"></i>
             </div>
-            <h3>Agile & Scrum Excellence</h3>
-            <p>
+            <h3 data-i18n="about.card4.title">Agile & Scrum Excellence</h3>
+            <p data-i18n="about.card4.desc">
               Aktif dalam seluruh siklus pengembangan produk Agile/Scrum (Backlog Grooming, Sprint Planning, Daily Scrum, Sprint Review, dan Retrospective) di industri Fintech dan Media Skala Besar.
             </p>
           </div>
@@ -196,11 +200,11 @@
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="skills.tag">
             <i class="fa-solid fa-layer-group"></i> Keahlian & Alat
           </div>
-          <h2 class="section-title">Teknologi & Metodologi</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="skills.title">Teknologi & Metodologi</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">
             Stack lengkap yang digunakan untuk membangun dan menguji perangkat lunak berkualitas tinggi.
           </p>
         </div>
@@ -210,7 +214,7 @@
           <div class="skill-category-card">
             <div class="skill-category-title">
               <i class="fa-solid fa-laptop-code"></i>
-              Modern Web & Software Development
+              <span data-i18n="skills.cat1.title">Modern Web & Software Development</span>
             </div>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
@@ -233,7 +237,7 @@
           <div class="skill-category-card">
             <div class="skill-category-title">
               <i class="fa-solid fa-brain"></i>
-              Adopsi AI & Produktivitas
+              <span data-i18n="skills.cat2.title">Adopsi AI & Produktivitas</span>
             </div>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> AI-Assisted Testing & Coding</span>
@@ -249,7 +253,7 @@
           <div class="skill-category-card">
             <div class="skill-category-title">
               <i class="fa-solid fa-list-check"></i>
-              Pengujian Perangkat Lunak
+              <span data-i18n="skills.cat3.title">Pengujian Perangkat Lunak</span>
             </div>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-solid fa-hand"></i> Manual Testing</span>
@@ -266,7 +270,7 @@
           <div class="skill-category-card">
             <div class="skill-category-title">
               <i class="fa-solid fa-toolbox"></i>
-              Alat QA & Metodologi
+              <span data-i18n="skills.cat4.title">Alat QA & Metodologi</span>
             </div>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-solid fa-robot"></i> Robot Framework</span>
@@ -286,11 +290,11 @@
     <section id="experience" class="section bg-surface">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="exp.tag">
             <i class="fa-solid fa-briefcase"></i> Pengalaman Kerja
           </div>
-          <h2 class="section-title">Riwayat Karir Profesional</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="exp.title">Riwayat Karir Profesional</h2>
+          <p class="section-subtitle" data-i18n="exp.subtitle">
             Pengalaman dalam pengujian perangkat lunak skala enterprise dan pengembangan sistem modern.
           </p>
         </div>
@@ -300,16 +304,16 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2021 – Sekarang</span>
-              <h3 class="timeline-title">Senior Software Quality Assurance Engineer</h3>
-              <div class="timeline-company">
+              <span class="timeline-date" data-i18n="exp.item1.date">2021 – Sekarang</span>
+              <h3 class="timeline-title" data-i18n="exp.item1.title">Senior Software Quality Assurance Engineer</h3>
+              <div class="timeline-company" data-i18n="exp.item1.company">
                 <i class="fa-solid fa-building"></i> PT Amartha Mikro Fintek
               </div>
               <ul class="timeline-bullets">
-                <li>Memimpin pengujian kualitas produk Web Admin Panel, Mobile Apps (Amartha Plus), dan REST API menggunakan kombinasi Manual Testing, Automation Testing, dan AI-assisted tools.</li>
-                <li>Menerapkan Generative AI & Prompt Engineering untuk mempercepat pembuatan Test Scenario, Edge Cases, Test Case, serta pembuatan skrip otomasisasi Robot Framework dan validasi API di Postman.</li>
-                <li>Memanfaatkan pengalaman pemrograman modern (Node.js/JavaScript) untuk memahami struktur arsitektur API backend dan mendukung pemecahan masalah bug tingkat lanjut.</li>
-                <li>Aktif berpartisipasi dalam seluruh siklus Agile/Scrum (Backlog Grooming, Sprint Planning, Daily Scrum, Sprint Review, Retrospective).</li>
+                <li data-i18n="exp.item1.bullet1">Memimpin pengujian kualitas produk Web Admin Panel, Mobile Apps (Amartha Plus), dan REST API menggunakan kombinasi Manual Testing, Automation Testing, dan AI-assisted tools.</li>
+                <li data-i18n="exp.item1.bullet2">Menerapkan Generative AI & Prompt Engineering untuk mempercepat pembuatan Test Scenario, Edge Cases, Test Case, serta pembuatan skrip otomasisasi Robot Framework dan validasi API di Postman.</li>
+                <li data-i18n="exp.item1.bullet3">Memanfaatkan pengalaman pemrograman modern (Node.js/JavaScript) untuk memahami struktur arsitektur API backend dan mendukung pemecahan masalah bug tingkat lanjut.</li>
+                <li data-i18n="exp.item1.bullet4">Aktif berpartisipasi dalam seluruh siklus Agile/Scrum (Backlog Grooming, Sprint Planning, Daily Scrum, Sprint Review, Retrospective).</li>
               </ul>
             </div>
           </div>
@@ -318,15 +322,15 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2020 – 2021</span>
-              <h3 class="timeline-title">Software Quality Assurance Engineer</h3>
-              <div class="timeline-company">
+              <span class="timeline-date" data-i18n="exp.item2.date">2020 – 2021</span>
+              <h3 class="timeline-title" data-i18n="exp.item2.title">Software Quality Assurance Engineer</h3>
+              <div class="timeline-company" data-i18n="exp.item2.company">
                 <i class="fa-solid fa-newspaper"></i> IDN Media
               </div>
               <ul class="timeline-bullets">
-                <li>Menjamin kualitas dan performa ekosistem portal web skala besar (IDNTimes.com, Popmama.com, Popbela.com, Duniaku.com, GGWP.id) serta aplikasi mobile (IDN Apps dan Yummy Apps).</li>
-                <li>Melakukan Functional Testing, API Testing, dan Regression Testing secara rutin guna memastikan kestabilan produk sebelum rilis.</li>
-                <li>Membangun dan mengimplementasikan kerangka otomatisasi pengujian berbasis Katalon Studio dan Robot Framework.</li>
+                <li data-i18n="exp.item2.bullet1">Menjamin kualitas dan performa ekosistem portal web skala besar (IDNTimes.com, Popmama.com, Popbela.com, Duniaku.com, GGWP.id) serta aplikasi mobile (IDN Apps dan Yummy Apps).</li>
+                <li data-i18n="exp.item2.bullet2">Melakukan Functional Testing, API Testing, dan Regression Testing secara rutin guna memastikan kestabilan produk sebelum rilis.</li>
+                <li data-i18n="exp.item2.bullet3">Membangun dan mengimplementasikan kerangka otomatisasi pengujian berbasis Katalon Studio dan Robot Framework.</li>
               </ul>
             </div>
           </div>
@@ -335,14 +339,14 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2020 (3 Bulan)</span>
-              <h3 class="timeline-title">Freelance Software Quality Assurance Engineer</h3>
-              <div class="timeline-company">
+              <span class="timeline-date" data-i18n="exp.item3.date">2020 (3 Bulan)</span>
+              <h3 class="timeline-title" data-i18n="exp.item3.title">Freelance Software Quality Assurance Engineer</h3>
+              <div class="timeline-company" data-i18n="exp.item3.company">
                 <i class="fa-solid fa-heart-pulse"></i> PT Riliv Psikologi Indonesia
               </div>
               <ul class="timeline-bullets">
-                <li>Pengujian menyeluruh pada platform Website CMS dan Aplikasi Mobile Riliv secara manual dan otomatis.</li>
-                <li>Inisiator dan perancang pertama arsitektur Automation Testing untuk platform website Riliv.</li>
+                <li data-i18n="exp.item3.bullet1">Pengujian menyeluruh pada platform Website CMS dan Aplikasi Mobile Riliv secara manual dan otomatis.</li>
+                <li data-i18n="exp.item3.bullet2">Inisiator dan perancang pertama arsitektur Automation Testing untuk platform website Riliv.</li>
               </ul>
             </div>
           </div>
@@ -351,15 +355,15 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">2019 – 2020</span>
-              <h3 class="timeline-title">Web & Software Developer</h3>
-              <div class="timeline-company">
+              <span class="timeline-date" data-i18n="exp.item4.date">2019 – 2020</span>
+              <h3 class="timeline-title" data-i18n="exp.item4.title">Web & Software Developer</h3>
+              <div class="timeline-company" data-i18n="exp.item4.company">
                 <i class="fa-solid fa-laptop-code"></i> PT Sinergi Informatika Semen Indonesia (SISI) / Project Based
               </div>
               <ul class="timeline-bullets">
-                <li>Mengembangkan dan merancang aplikasi web modern serta dashboard Customer Relationship Management (CRM) interaktif berbasis Node.js, Next.js, dan CodeIgniter dengan basis data Oracle / MySQL.</li>
-                <li>Membangun RESTful API performa tinggi untuk mengintegrasikan data pasar, aktivitas sales, koordinator, dan inspektor secara real-time.</li>
-                <li>Melakukan pengujian internal (Unit Testing/Integration Testing), penyusunan dokumentasi teknis API, serta memberikan pemeliharaan dan dukungan teknis sistem.</li>
+                <li data-i18n="exp.item4.bullet1">Mengembangkan dan merancang aplikasi web modern serta dashboard Customer Relationship Management (CRM) interaktif berbasis Node.js, Next.js, dan CodeIgniter dengan basis data Oracle / MySQL.</li>
+                <li data-i18n="exp.item4.bullet2">Membangun RESTful API performa tinggi untuk mengintegrasikan data pasar, aktivitas sales, koordinator, dan inspektor secara real-time.</li>
+                <li data-i18n="exp.item4.bullet3">Melakukan pengujian internal (Unit Testing/Integration Testing), penyusunan dokumentasi teknis API, serta memberikan pemeliharaan dan dukungan teknis sistem.</li>
               </ul>
             </div>
           </div>
@@ -371,29 +375,29 @@
     <section id="projects" class="section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="projects.tag">
             <i class="fa-solid fa-diagram-project"></i> Proyek Utama
           </div>
-          <h2 class="section-title">Portofolio & Karya</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="projects.title">Portofolio & Karya</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">
             Kumpulan proyek pengembangan sistem dan arsitektur pengujian otomatis.
           </p>
         </div>
 
         <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
-          <button class="filter-btn" data-filter="web">Fullstack Web & API</button>
-          <button class="filter-btn" data-filter="qa">QA & Automation</button>
-          <button class="filter-btn" data-filter="mobile">AR & Mobile</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="web" data-i18n="projects.filter.web">Fullstack Web & API</button>
+          <button class="filter-btn" data-filter="qa" data-i18n="projects.filter.qa">QA & Automation</button>
+          <button class="filter-btn" data-filter="mobile" data-i18n="projects.filter.mobile">AR & Mobile</button>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card" data-category="web">
             <div class="project-body">
-              <span class="project-tag">Fullstack & API</span>
-              <h3 class="project-title">Modern Web & API Development Projects</h3>
-              <p class="project-desc">
+              <span class="project-tag" data-i18n="projects.item1.tag">Fullstack & API</span>
+              <h3 class="project-title" data-i18n="projects.item1.title">Modern Web & API Development Projects</h3>
+              <p class="project-desc" data-i18n="projects.item1.desc">
                 Mengembangkan berbagai platform web modern berkinerja tinggi menggunakan stack Next.js & Node.js, menerapkan Server-Side Rendering (SSR), arsitektur modular, dan integrasi API yang aman.
               </p>
               <div class="project-tech">
@@ -409,9 +413,9 @@
           <!-- Project 2 -->
           <div class="project-card" data-category="web">
             <div class="project-body">
-              <span class="project-tag">Enterprise System</span>
-              <h3 class="project-title">Customer Relationship Management (CRM) System</h3>
-              <p class="project-desc">
+              <span class="project-tag" data-i18n="projects.item2.tag">Enterprise System</span>
+              <h3 class="project-title" data-i18n="projects.item2.title">Customer Relationship Management (CRM) System</h3>
+              <p class="project-desc" data-i18n="projects.item2.desc">
                 Mengembangkan aplikasi web desktop pemantauan data pasar dan aplikasi mobile sales tracking secara real-time untuk PT Sinergi Informatika Semen Indonesia (SISI).
               </p>
               <div class="project-tech">
@@ -427,9 +431,9 @@
           <!-- Project 3 -->
           <div class="project-card" data-category="mobile">
             <div class="project-body">
-              <span class="project-tag">AR & Web Admin</span>
-              <h3 class="project-title">Augmented Reality Sistem Pemesanan Cafe</h3>
-              <p class="project-desc">
+              <span class="project-tag" data-i18n="projects.item3.tag">AR & Web Admin</span>
+              <h3 class="project-title" data-i18n="projects.item3.title">Augmented Reality Sistem Pemesanan Cafe</h3>
+              <p class="project-desc" data-i18n="projects.item3.desc">
                 Tugas Akhir Kuliah UISI - Mengembangkan sistem pemesanan kafe berbasis Mobile (Unity 3D & Augmented Reality) dan Dashboard Website Admin untuk pengelolaan pesanan real-time.
               </p>
               <div class="project-tech">
@@ -444,9 +448,9 @@
           <!-- Project 4 -->
           <div class="project-card" data-category="qa">
             <div class="project-body">
-              <span class="project-tag">QA Automation</span>
-              <h3 class="project-title">Enterprise Test Automation Frameworks</h3>
-              <p class="project-desc">
+              <span class="project-tag" data-i18n="projects.item4.tag">QA Automation</span>
+              <h3 class="project-title" data-i18n="projects.item4.title">Enterprise Test Automation Frameworks</h3>
+              <p class="project-desc" data-i18n="projects.item4.desc">
                 Merancang dan mengimplementasikan kerangka otomatisasi pengujian berbasis Robot Framework & Katalon Studio untuk pengujian Web Admin, Mobile Apps (Amartha Plus, Riliv), dan REST API.
               </p>
               <div class="project-tech">
@@ -461,9 +465,9 @@
           <!-- Business Project: Yommory -->
           <div class="project-card" data-category="business" style="border-color: rgba(245, 158, 11, 0.45);">
             <div class="project-body">
-              <span class="project-tag" style="color: #f59e0b;"><i class="fa-solid fa-shop"></i> Store & Retail Venture</span>
-              <h3 class="project-title">Yommory Official Store</h3>
-              <p class="project-desc">
+              <span class="project-tag" style="color: #f59e0b;" data-i18n="projects.item5.tag"><i class="fa-solid fa-shop"></i> Store & Retail Venture</span>
+              <h3 class="project-title" data-i18n="projects.item5.title">Yommory Official Store</h3>
+              <p class="project-desc" data-i18n="projects.item5.desc">
                 Usaha toko & retail kreatif terpercaya yang didirikan oleh M Irfan Arisaldy. Menyediakan produk pilihan berkualitas tinggi dengan pelayanan terpercaya.
               </p>
               <div class="project-tech" style="margin-bottom: 1.25rem;">
@@ -472,7 +476,7 @@
                 <span class="tech-badge" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1);">Retail Business</span>
               </div>
               <div>
-                <a href="yommory/index.html" class="btn btn-sm" style="background: #f59e0b; color: #111827; font-weight: 700;">
+                <a href="yommory/index.html" class="btn btn-sm" style="background: #f59e0b; color: #111827; font-weight: 700;" data-i18n="projects.item5.btn">
                   <i class="fa-solid fa-store"></i> Buka Halaman Yommory &rarr;
                 </a>
               </div>
@@ -486,11 +490,11 @@
     <section id="education" class="section bg-surface">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="edu.tag">
             <i class="fa-solid fa-graduation-cap"></i> Pendidikan & Magang
           </div>
-          <h2 class="section-title">Latar Belakang Akademis</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="edu.title">Latar Belakang Akademis</h2>
+          <p class="section-subtitle" data-i18n="edu.subtitle">
             Pendidikan formal dan pengalaman magang di instansi serta BUMN.
           </p>
         </div>
@@ -503,13 +507,13 @@
                 <i class="fa-solid fa-university"></i>
               </div>
               <div class="edu-info">
-                <h3>Universitas Internasional Semen Indonesia (UISI)</h3>
-                <p>Sarjana Komputer (S.Kom.), Teknik Informatika | Lulus 2019</p>
+                <h3 data-i18n="edu.item1.title">Universitas Internasional Semen Indonesia (UISI)</h3>
+                <p data-i18n="edu.item1.degree">Sarjana Komputer (S.Kom.), Teknik Informatika | Lulus 2019</p>
               </div>
             </div>
             <ul class="timeline-bullets">
-              <li>Ketua Divisi Humas Himpunan Mahasiswa Informatika (HIMA Informatika UISI).</li>
-              <li>Fokus studi pada Rekayasa Perangkat Lunak, Pemrograman Web Modern, dan Arsitektur Sistem Informasi.</li>
+              <li data-i18n="edu.item1.b1">Ketua Divisi Humas Himpunan Mahasiswa Informatika (HIMA Informatika UISI).</li>
+              <li data-i18n="edu.item1.b2">Fokus studi pada Rekayasa Perangkat Lunak, Pemrograman Web Modern, dan Arsitektur Sistem Informasi.</li>
             </ul>
           </div>
 
@@ -520,13 +524,13 @@
                 <i class="fa-solid fa-school"></i>
               </div>
               <div class="edu-info">
-                <h3>SMK Semen Gresik</h3>
-                <p>Rekayasa Perangkat Lunak (RPL) | Lulus 2015</p>
+                <h3 data-i18n="edu.item2.title">SMK Semen Gresik</h3>
+                <p data-i18n="edu.item2.degree">Rekayasa Perangkat Lunak (RPL) | Lulus 2015</p>
               </div>
             </div>
             <ul class="timeline-bullets">
-              <li>Pengurus OSIS SMK Semen Gresik.</li>
-              <li>Atlet Beladiri Jujitsu.</li>
+              <li data-i18n="edu.item2.b1">Pengurus OSIS SMK Semen Gresik.</li>
+              <li data-i18n="edu.item2.b2">Atlet Beladiri Jujitsu.</li>
             </ul>
           </div>
 
@@ -537,11 +541,11 @@
                 <i class="fa-solid fa-building-user"></i>
               </div>
               <div class="edu-info">
-                <h3>KPPBC (Bea Cukai) Gresik</h3>
-                <p>Administrator & Analyst System (Magang)</p>
+                <h3 data-i18n="edu.item3.title">KPPBC (Bea Cukai) Gresik</h3>
+                <p data-i18n="edu.item3.role">Administrator & Analyst System (Magang)</p>
               </div>
             </div>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">
+            <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="edu.item3.desc">
               Pengelolaan sistem administrasi dan analisis data sistem bea dan cukai.
             </p>
           </div>
@@ -553,11 +557,11 @@
                 <i class="fa-solid fa-industry"></i>
               </div>
               <div class="edu-info">
-                <h3>PT Semen Indonesia (Persero) Tbk</h3>
-                <p>Staf IT PKL (3 Bulan)</p>
+                <h3 data-i18n="edu.item4.title">PT Semen Indonesia (Persero) Tbk</h3>
+                <p data-i18n="edu.item4.role">Staf IT PKL (3 Bulan)</p>
               </div>
             </div>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">
+            <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="edu.item4.desc">
               Praktek Kerja Lapangan di divisi IT pendukung operasional holding Semen Indonesia.
             </p>
           </div>
@@ -569,39 +573,39 @@
     <section id="contact" class="section">
       <div class="container">
         <div class="contact-card">
-          <div class="section-tag">
+          <div class="section-tag" data-i18n="contact.tag">
             <i class="fa-solid fa-envelope-open-text"></i> Mari Berdiskusi
           </div>
-          <h2 class="section-title">Hubungi Saya</h2>
-          <p class="section-subtitle" style="margin-bottom: 2rem;">
+          <h2 class="section-title" data-i18n="contact.title">Hubungi Saya</h2>
+          <p class="section-subtitle" style="margin-bottom: 2rem;" data-i18n="contact.subtitle">
             Saya siap mendiskusikan peluang karir, proyek otomatisasi pengujian, atau pengembangan web modern.
           </p>
 
           <div class="contact-methods">
             <a href="mailto:iarisaldy@gmail.com" class="contact-item">
               <i class="fa-solid fa-envelope"></i>
-              <h4>Email</h4>
+              <h4 data-i18n="contact.email">Email</h4>
               <p>iarisaldy@gmail.com</p>
             </a>
 
             <a href="https://wa.me/6282264117557" target="_blank" class="contact-item">
               <i class="fa-brands fa-whatsapp"></i>
-              <h4>WhatsApp / Telepon</h4>
+              <h4 data-i18n="contact.wa">WhatsApp / Telepon</h4>
               <p>082264117557</p>
             </a>
 
             <a href="https://linkedin.com/in/irfan-arisaldy" target="_blank" class="contact-item">
               <i class="fa-brands fa-linkedin"></i>
-              <h4>LinkedIn</h4>
+              <h4 data-i18n="contact.linkedin">LinkedIn</h4>
               <p>irfan-arisaldy</p>
             </a>
           </div>
 
           <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="CV_M_Irfan_Arisaldy.pdf" download class="btn btn-primary">
+            <a href="CV_M_Irfan_Arisaldy.pdf" download class="btn btn-primary" data-i18n="contact.btnCV">
               <i class="fa-solid fa-file-pdf"></i> Unduh CV M Irfan Arisaldy (PDF)
             </a>
-            <a href="https://github.com/iarisaldy" target="_blank" class="btn btn-outline">
+            <a href="https://github.com/iarisaldy" target="_blank" class="btn btn-outline" data-i18n="contact.btnGH">
               <i class="fa-brands fa-github"></i> Profil GitHub (iarisaldy)
             </a>
           </div>
@@ -612,14 +616,15 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer-content">
-        <p>&copy; 2026 M Irfan Arisaldy, S.Kom. | Gresik, Jawa Timur</p>
-        <p>
+        <p data-i18n="footer.rights">&copy; 2026 M Irfan Arisaldy, S.Kom. | Gresik, Jawa Timur</p>
+        <p data-i18n="footer.published">
           Disertai <i class="fa-solid fa-heart" style="color: var(--accent-cyan);"></i> dipublish ke <a href="https://iarisaldy.github.io" style="color: var(--accent-cyan); text-decoration: none;">iarisaldy.github.io</a>
         </p>
       </div>
     </footer>
 
     <!-- JavaScript Interactivity -->
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
